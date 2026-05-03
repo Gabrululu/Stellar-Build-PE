@@ -10,7 +10,6 @@ Toda la información oficial sobre fechas, entregables, criterios de evaluación
 
 | Hito | Fecha |
 |---|---|
-| Cierre de inscripciones | 1 de mayo |
 | Buildathon (evento presencial) | 2 de mayo |
 | Envío de proyectos | Hasta el 7 de mayo, 11:59 PM |
 | Anuncio de ganadores | Por confirmar |
@@ -78,7 +77,6 @@ Toda la información oficial sobre fechas, entregables, criterios de evaluación
 - Abierto a participantes del Perú
 - Individual o en equipos de hasta **3 personas** (se recomienda equipos multidisciplinarios)
 - Todos los participantes deben registrarse previamente
-- **Debes asistir presencialmente el 2 de mayo** para ser considerado participante válido
 
 ---
 
@@ -111,7 +109,7 @@ Para que tu proyecto sea considerado, debe cumplir todo lo siguiente:
 
 ## Entregables (antes del 7 de mayo, 11:59 PM)
 
-Enviar todo a través del campus virtual de Ethereum Lima:
+Enviar todo a través de la plataforma Stellar Build:
 
 ### Obligatorios
 
@@ -185,7 +183,7 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 
 - **Soporte técnico** durante los 4 días posteriores al evento vía chat del evento
 - **Canales oficiales:** WhatsApp y Telegram del evento
-- **Campus virtual** de Ethereum Lima con recursos y documentación sobre Stellar
+- **Stellar Build Lima** plataforma para subir el proyecto con recursos y documentación sobre Stellar
 
 ---
 
@@ -196,7 +194,6 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 3. **Despliega en testnet antes del día 7** — un contrato sin deploy no es un MVP válido según las bases.
 4. **Graba el video con el equipo en cámara** — es requisito explícito. Practica el guión antes de grabar.
 5. **Cuida el mockup** — tiene su propio criterio de evaluación. Un Figma con 4-5 pantallas claras puede marcar la diferencia.
-6. **Publica en X el mismo día que envíes** — es parte de los requisitos de postulación.
 
 ---
 
@@ -208,4 +205,4 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 - [ ] Video subido a YouTube, Loom o Drive con enlace público
 - [ ] Mockup listo (Figma, Whimsical, Canva o similar)
 - [ ] Opcional: Post publicado en X mencionando a todas las cuentas requeridas
-- [ ] Todo enviado por el campus virtual de Ethereum Lima antes del 7 de mayo, 11:59 PM
+- [ ] Todo enviado por la plataforma Sellar Build Lima antes del 7 de mayo, 11:59 PM

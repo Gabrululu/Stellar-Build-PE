@@ -1,3 +1,4 @@
+
 # Stellar Build PE — Guía para Builders
 
 Guía práctica para desarrolladores que participan en el **Buildathon Ethereum Lima × Stellar** (2 de mayo, 2026), organizado por Ethereum Lima con colaboración de BAF y el programa StarMaker.

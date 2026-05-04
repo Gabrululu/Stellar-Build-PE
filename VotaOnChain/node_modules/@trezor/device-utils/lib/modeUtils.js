@@ -1,9 +1,0 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.isDeviceInBootloaderMode = void 0;
-const isDeviceInBootloaderMode = device => !!device?.features?.bootloader_mode;
-exports.isDeviceInBootloaderMode = isDeviceInBootloaderMode;
-//# sourceMappingURL=modeUtils.js.map

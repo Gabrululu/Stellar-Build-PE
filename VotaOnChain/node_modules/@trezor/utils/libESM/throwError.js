@@ -1,4 +1,0 @@
-export const throwError = reason => {
-  throw new Error(reason);
-};
-//# sourceMappingURL=throwError.js.map

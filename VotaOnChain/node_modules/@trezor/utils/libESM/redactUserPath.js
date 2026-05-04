@@ -1,3 +1,0 @@
-export const startOfUserPathRegex = /([/\\][Uu]sers[/\\]{1,4})([^"^'^[^\]^/^\\]*)/g;
-export const redactUserPathFromString = text => text.replace(startOfUserPathRegex, '$1[*]');
-//# sourceMappingURL=redactUserPath.js.map

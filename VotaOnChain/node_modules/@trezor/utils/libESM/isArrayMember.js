@@ -1,1 +1,0 @@
-export const isArrayMember = (value, arr) => arr.some(v => v === value);

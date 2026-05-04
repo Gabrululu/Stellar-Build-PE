@@ -1,1 +1,0 @@
-export const isNotUndefined = item => typeof item !== 'undefined';

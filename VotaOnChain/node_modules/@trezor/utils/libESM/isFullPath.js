@@ -1,5 +1,0 @@
-export const isFullPath = path => {
-  const fullPathPattern = /^(\/|([a-zA-Z]:\\))/;
-  return fullPathPattern.test(path);
-};
-//# sourceMappingURL=isFullPath.js.map

@@ -1,1 +1,0 @@
-export const countBytesInString = input => encodeURI(input).split(/%..|./).length - 1;

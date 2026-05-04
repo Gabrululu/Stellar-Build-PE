@@ -1,5 +1,0 @@
-export const isHex = str => {
-  const regExp = /^(0x|0X)?[0-9A-Fa-f]+$/g;
-  return regExp.test(str);
-};
-//# sourceMappingURL=isHex.js.map

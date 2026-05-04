@@ -1,1 +1,0 @@
-export const arrayDistinct = (item, index, self) => self.indexOf(item) === index;

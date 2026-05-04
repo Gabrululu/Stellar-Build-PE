@@ -1,6 +1,0 @@
-import { getMutex } from "./getMutex.js";
-export const getSynchronize = mutex => {
-  const lock = mutex ?? getMutex();
-  return (action, lockId) => lock(lockId).then(unlock => Promise.resolve().then(action).finally(unlock));
-};
-//# sourceMappingURL=getSynchronize.js.map

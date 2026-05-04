@@ -1,3 +1,0 @@
-const HOSTNAME_REGEX = /^([a-z0-9.+-]+:\/\/)?([a-z0-9.-]+)([:/][^:/]+)*\/?$/i;
-export const parseHostname = url => url.match(HOSTNAME_REGEX)?.[2]?.toLowerCase();
-//# sourceMappingURL=parseHostname.js.map

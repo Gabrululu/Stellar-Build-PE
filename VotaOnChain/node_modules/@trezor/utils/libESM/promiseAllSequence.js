@@ -1,9 +1,0 @@
-export const promiseAllSequence = async actions => {
-  const results = [];
-  for (let i = 0; i < actions.length; ++i) {
-    const result = await actions[i]();
-    results.push(result);
-  }
-  return results;
-};
-//# sourceMappingURL=promiseAllSequence.js.map

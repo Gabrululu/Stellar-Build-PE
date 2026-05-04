@@ -1,8 +1,0 @@
-export function getKeyByValue(obj, value) {
-  return obj && Object.keys(obj).find(x => obj[x] === value);
-}
-export function getValueByKey(obj, enumKey) {
-  const key = obj && Object.keys(obj).find(x => x === enumKey);
-  return key && obj[key];
-}
-//# sourceMappingURL=enumUtils.js.map

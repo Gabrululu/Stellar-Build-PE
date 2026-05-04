@@ -1,8 +1,0 @@
-export function splitStringEveryNCharacters(value, n) {
-  if (n === 0) {
-    return [];
-  }
-  const regex = new RegExp(`.{1,${n}}`, 'g');
-  return value.match(regex) ?? [];
-}
-//# sourceMappingURL=splitStringEveryNCharacters.js.map

@@ -1,7 +1,0 @@
-import { EventEmitter } from "events";
-export class TypedEmitter extends EventEmitter {
-  listenerCount(eventName) {
-    return super.listenerCount(eventName);
-  }
-}
-//# sourceMappingURL=typedEventEmitter.js.map

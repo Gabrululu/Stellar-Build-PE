@@ -1,0 +1,1 @@
+{"version":3,"file":"prefix.d.ts","sourceRoot":"","sources":["../../src/prefix.ts"],"names":[],"mappings":"AAQA,2CAA2C;AAC3C,uBAAe,SAAS;IACpB,MAAM,EAAE,MAAM,CAAC;gBAEH,EAAE,MAAM,EAAE,EAAE;QAAE,MAAM,EAAE,MAAM,CAAA;KAAE;CAI7C;AAED,yEAAyE;AACzE,uBAAe,uBAAwB,SAAQ,SAAS;IACpD,qEAAqE;IACrE,SAAS,aAAa,MAAM,EAAE,MAAM;CAGvC;AAED;;;MAGM;AAQN,qHAAqH;AACrH,qBAAa,oBAAqB,SAAQ,uBAAuB;;CAAmD"}

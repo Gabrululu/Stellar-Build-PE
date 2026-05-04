@@ -1,0 +1,84 @@
+import { ThpCredentials, ThpDeviceProperties, ThpHandshakeCredentials, ThpMessageSyncBit, ThpPairingMethod } from './messages';
+export type ThpStateSerialized = {
+    properties?: ThpDeviceProperties;
+    credentials: ThpCredentials[];
+} & ThpChannelState;
+export type ThpChannelState = {
+    channel: string;
+    sendBit: ThpMessageSyncBit;
+    recvBit: ThpMessageSyncBit;
+    sendAckBit: ThpMessageSyncBit;
+    recvAckBit: ThpMessageSyncBit;
+    sendNonce: number;
+    recvNonce: number;
+    expectedResponses: number[];
+};
+export type ThpPhase = 'handshake' | 'pairing' | 'paired';
+export declare class ThpState {
+    private _properties?;
+    private _pairingCredentials;
+    private _phase;
+    private _isPaired;
+    private _pairingTagPromise;
+    private _cancelablePromise;
+    private _handshakeCredentials?;
+    private _channel;
+    private _sendBit;
+    private _sendAckBit;
+    private _sendNonce;
+    private _recvBit;
+    private _recvAckBit;
+    private _recvNonce;
+    private _expectedResponses;
+    private _selectedMethod?;
+    private _nfcSecret?;
+    private _sessionId;
+    private _sessionIdCounter;
+    get pairingTagPromise(): {
+        abort: () => Promise<void>;
+    } | undefined;
+    setPairingTagPromise(p?: {
+        abort: () => Promise<void>;
+    }): void;
+    get cancelablePromise(): boolean;
+    setCancelablePromise(p: boolean): void;
+    get properties(): ThpDeviceProperties | undefined;
+    setThpProperties(props: ThpDeviceProperties): void;
+    get phase(): ThpPhase;
+    setPhase(phase: ThpPhase): void;
+    get isPaired(): boolean;
+    get isAutoconnectPaired(): boolean | undefined;
+    setIsPaired(isPaired: boolean): void;
+    get pairingMethod(): ThpPairingMethod | undefined;
+    setPairingMethod(method: ThpPairingMethod): void;
+    get pairingCredentials(): ThpCredentials[];
+    setPairingCredentials(credentials?: ThpCredentials[]): void;
+    removePairingCredential({ credential }: ThpCredentials): void;
+    setNfcSecret(secret: Buffer): void;
+    get nfcSecret(): Buffer<ArrayBufferLike> | undefined;
+    get nfcData(): Buffer<ArrayBuffer> | undefined;
+    get channel(): Buffer<ArrayBufferLike>;
+    setChannel(channel: Buffer): void;
+    get sendBit(): ThpMessageSyncBit;
+    get sendAckBit(): ThpMessageSyncBit;
+    get sendNonce(): number;
+    get recvBit(): ThpMessageSyncBit;
+    get recvAckBit(): ThpMessageSyncBit;
+    get recvNonce(): number;
+    updateAckBit(type: 'send' | 'recv'): void;
+    updateSyncBit(type: 'send' | 'recv'): void;
+    updateNonce(type: 'send' | 'recv'): void;
+    sync(type: 'send' | 'recv', messageType: string): void;
+    get handshakeCredentials(): ThpHandshakeCredentials | undefined;
+    updateHandshakeCredentials(newCredentials: Partial<ThpHandshakeCredentials>): void;
+    get sessionId(): Buffer<ArrayBufferLike>;
+    createNewSessionId(): Buffer<ArrayBuffer>;
+    setSessionId(sessionId: Buffer): void;
+    serialize(): ThpStateSerialized;
+    deserialize(json: ThpChannelState): void;
+    get expectedResponses(): number[];
+    setExpectedResponses(expected: number[]): void;
+    resetState(): void;
+    toString(): string;
+}
+//# sourceMappingURL=ThpState.d.ts.map

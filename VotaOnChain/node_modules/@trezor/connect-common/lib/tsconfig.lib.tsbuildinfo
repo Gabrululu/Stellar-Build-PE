@@ -1,0 +1,1 @@
+{"root":["../src/index.ts","../src/map-releases.ts","../src/storage.ts","../src/systemInfo.ts","../src/messageChannel/abstract.ts","../src/messageChannel/serviceworker-window.ts","../src/messageChannel/window-serviceworker.ts","../src/messageChannel/window-window.ts"],"version":"5.8.3"}

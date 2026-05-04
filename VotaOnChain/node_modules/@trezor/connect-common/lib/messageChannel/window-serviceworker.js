@@ -1,0 +1,41 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WindowServiceWorkerChannel = void 0;
+const abstract_1 = require("./abstract");
+class WindowServiceWorkerChannel extends abstract_1.AbstractMessageChannel {
+  port;
+  constructor({
+    name,
+    channel
+  }) {
+    super({
+      channel,
+      sendFn: message => {
+        if (!this.port) throw new Error('port not assigned');
+        this.port.postMessage(message);
+      }
+    });
+    const port = chrome.runtime.connect({
+      name
+    });
+    this.port = port;
+    this.connect();
+  }
+  connect() {
+    this.port?.onMessage.addListener(message => {
+      if (message.channel.here === this.channel.here) return;
+      this.onMessage(message);
+    });
+    this.isConnected = true;
+  }
+  disconnect() {
+    if (!this.isConnected) return;
+    this.port?.disconnect();
+    this.isConnected = false;
+  }
+}
+exports.WindowServiceWorkerChannel = WindowServiceWorkerChannel;
+//# sourceMappingURL=window-serviceworker.js.map

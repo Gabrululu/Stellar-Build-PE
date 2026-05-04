@@ -1,0 +1,21 @@
+import { PROTO } from '../constants';
+import type { CoinInfo } from '../types/coinInfo';
+import type { DerivationPath, ProtoWithAddressN, ProtoWithDerivationPath } from '../types/params';
+export declare const HD_HARDENED = 2147483648;
+export declare const toHardened: (n: number) => number;
+export declare const fromHardened: (n: number) => number;
+export declare const getSlip44ByPath: (path: number[]) => number;
+export declare const getHDPath: (path: string) => number[];
+export declare const isSegwitPath: (path: number[] | undefined) => boolean;
+export declare const isBech32Path: (path: number[] | undefined) => boolean;
+export declare const isTaprootPath: (path: number[] | undefined) => boolean;
+export declare const getAccountType: (path: number[] | undefined) => "p2tr" | "p2wpkh" | "p2sh" | "p2pkh";
+export declare const getScriptType: (path: number[] | undefined) => PROTO.InternalInputScriptType | undefined;
+export declare const getOutputScriptType: (path?: number[]) => PROTO.ChangeOutputScriptType | undefined;
+export declare const validatePath: (path: DerivationPath, length?: number, base?: boolean) => number[];
+export declare const getSerializedPath: (path: number[]) => string;
+export declare const getPathFromIndex: (bip44purpose: number, bip44cointype: number, index: number) => number[];
+export declare const getIndexFromPath: (path: number[]) => number;
+export declare const fixPath: <T extends ProtoWithDerivationPath<PROTO.TxInputType> | ProtoWithDerivationPath<PROTO.TxOutputType>>(utxo: T) => ProtoWithAddressN<T>;
+export declare const getLabel: (label: string, coinInfo?: CoinInfo) => string;
+//# sourceMappingURL=pathUtils.d.ts.map

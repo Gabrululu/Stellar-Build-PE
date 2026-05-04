@@ -1,0 +1,4 @@
+
+> @ledgerhq/devices@8.6.1 build /home/runner/work/ledger-live/ledger-live/libs/ledgerjs/packages/devices
+> tsc && tsc -m esnext --moduleResolution bundler --outDir lib-es
+

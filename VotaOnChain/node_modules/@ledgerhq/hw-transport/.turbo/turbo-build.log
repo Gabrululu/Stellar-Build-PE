@@ -1,0 +1,4 @@
+
+> @ledgerhq/hw-transport@6.31.12 build /home/runner/work/ledger-live/ledger-live/libs/ledgerjs/packages/hw-transport
+> tsc && tsc -m esnext --moduleResolution bundler --outDir lib-es
+

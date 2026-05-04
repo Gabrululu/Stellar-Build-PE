@@ -1,0 +1,1 @@
+export const safeBigIntStringify = v => JSON.stringify(v, (_k, val) => typeof val === 'bigint' ? val.toString() : val);

@@ -1,0 +1,17 @@
+export declare const TYPES: {
+    readonly bitcoin: "Bitcoin";
+    readonly ethereum: "Ethereum";
+    readonly eos: "Eos";
+    readonly nem: "NEM";
+    readonly stellar: "Stellar";
+    readonly cardano: "Cardano";
+    readonly ripple: "Ripple";
+    readonly tezos: "Tezos";
+    readonly tron: "Tron";
+    readonly binance: "Binance";
+    readonly solana: "Solana";
+};
+export type NetworkType = keyof typeof TYPES;
+export declare const MODULES: readonly ["cardano", "eos", "ethereum", "monero", "nem", "ripple", "solana", "stellar", "tezos", "tron"];
+export type ModuleName = (typeof MODULES)[number];
+//# sourceMappingURL=network.d.ts.map

@@ -1,0 +1,4 @@
+
+> @ledgerhq/hw-app-str@7.2.8 build /home/runner/work/ledger-live/ledger-live/libs/ledgerjs/packages/hw-app-str
+> tsc && tsc -m esnext --moduleResolution bundler --outDir lib-es
+

@@ -1,0 +1,23 @@
+import { MessagesSchema as PROTO } from '@trezor/protobuf';
+import { AbstractMethod } from '../../../core/AbstractMethod';
+export default class EosGetPublicKey extends AbstractMethod<'eosGetPublicKey', PROTO.EosGetPublicKey[]> {
+    hasBundle?: boolean;
+    init(): void;
+    get info(): string;
+    get confirmation(): {
+        view: "export-address";
+        label: string;
+    };
+    run(): Promise<{
+        path: number[];
+        serializedPath: string;
+        wifPublicKey: string;
+        rawPublicKey: string;
+    } | {
+        path: number[];
+        serializedPath: string;
+        wifPublicKey: string;
+        rawPublicKey: string;
+    }[]>;
+}
+//# sourceMappingURL=eosGetPublicKey.d.ts.map

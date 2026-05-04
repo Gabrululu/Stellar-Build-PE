@@ -1,0 +1,16 @@
+import { ThpState } from './ThpState';
+type ProtobufEncoder = (messageName: string, messageData: Record<string, unknown>) => {
+    messageType: number;
+    message: Buffer;
+};
+export declare const encodePayload: (name: string, data: Record<string, unknown>, thpState: ThpState) => Buffer<ArrayBufferLike>;
+export declare const encodeProtobufMessage: (messageType: number, data: Buffer, channel: Buffer, thpState?: ThpState) => Buffer<ArrayBuffer>;
+export declare const encodeAck: (state: ThpState) => Buffer<ArrayBuffer>;
+export declare const encode: (options: {
+    messageName: string;
+    data: Record<string, unknown>;
+    thpState?: ThpState;
+    protobufEncoder: ProtobufEncoder;
+}) => Buffer<ArrayBufferLike>;
+export {};
+//# sourceMappingURL=encode.d.ts.map

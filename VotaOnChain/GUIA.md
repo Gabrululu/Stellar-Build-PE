@@ -11,7 +11,7 @@ npm create vite@latest vota-onchain -- --template react-ts
 cd vota-onchain
 npm install
 npm install @stellar/stellar-sdk
-npm install @creit-tech/stellar-wallets-kit
+npm install @creit.tech/stellar-wallets-kit
 npm install @neondatabase/serverless
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -188,7 +188,7 @@ npm run dev
       → server.prepareTransaction(tx)   ← agrega auth entries
       → retorna XDR (string)
 
-2. kit.signTransaction(xdr)             ← usuario firma en Freighter
+2. StellarWalletsKit.signTransaction(xdr) ← usuario firma en Freighter
       → retorna signedTxXdr
 
 3. submitSignedTx(signedTxXdr)

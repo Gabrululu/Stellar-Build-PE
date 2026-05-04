@@ -1,0 +1,7 @@
+import { Type } from 'protobufjs/light';
+export declare const encode: (Message: Type, data: Record<string, unknown>) => Buffer<ArrayBuffer>;
+export declare const encodeMessage: (messages: protobuf.Root, messageName: string, data: Record<string, unknown>) => {
+    messageType: number;
+    message: Buffer<ArrayBuffer>;
+};
+//# sourceMappingURL=encode.d.ts.map

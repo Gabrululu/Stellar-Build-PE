@@ -1,0 +1,1 @@
+{"root":["../src/blockbook.ts","../src/blockfrost.ts","../src/index.ts","../src/ripple.ts","../src/solana-types.ts","../src/solana.ts","../src/stellar.ts","../src/utils.ts"],"version":"5.8.3"}

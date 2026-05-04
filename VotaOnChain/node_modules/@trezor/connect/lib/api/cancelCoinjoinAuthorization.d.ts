@@ -1,0 +1,10 @@
+import { MessagesSchema as PROTO } from '@trezor/protobuf';
+import { AbstractMethod } from '../core/AbstractMethod';
+export default class CancelCoinjoinAuthorization extends AbstractMethod<'cancelCoinjoinAuthorization', PROTO.CancelAuthorization> {
+    init(): void;
+    get info(): string;
+    run(): Promise<{
+        message: string;
+    }>;
+}
+//# sourceMappingURL=cancelCoinjoinAuthorization.d.ts.map

@@ -1,13 +1,10 @@
-import {
-  StellarWalletsKit,
-  WalletNetwork,
-  allowAllModules,
-  FREIGHTER_ID,
-} from '@creit-tech/stellar-wallets-kit';
+import { StellarWalletsKit, Networks } from '@creit.tech/stellar-wallets-kit';
+import { FreighterModule, FREIGHTER_ID } from '@creit.tech/stellar-wallets-kit/modules/freighter';
 
-// Singleton del kit — compartido entre WalletConnect y VoteForm
-export const kit = new StellarWalletsKit({
-  network: WalletNetwork.TESTNET,
+StellarWalletsKit.init({
+  network: Networks.TESTNET,
   selectedWalletId: FREIGHTER_ID,
-  modules: allowAllModules(),
+  modules: [new FreighterModule()],
 });
+
+export { StellarWalletsKit, Networks };

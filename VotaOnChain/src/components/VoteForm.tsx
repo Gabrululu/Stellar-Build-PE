@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { WalletNetwork } from '@creit-tech/stellar-wallets-kit';
 import { VOTE_OPTIONS, buildVoteTx, submitSignedTx } from '../lib/stellar';
 import { saveVote } from '../lib/db';
-import { kit } from '../lib/kit';
+import { StellarWalletsKit, Networks } from '../lib/kit';
 
 interface VoteFormProps {
   walletAddress: string;
@@ -27,8 +26,8 @@ export default function VoteForm({ walletAddress, onVoteSuccess }: VoteFormProps
       const txXDR = await buildVoteTx(walletAddress, selected);
 
       setStep('signing');
-      const { signedTxXdr } = await kit.signTransaction(txXDR, {
-        networkPassphrase: WalletNetwork.TESTNET,
+      const { signedTxXdr } = await StellarWalletsKit.signTransaction(txXDR, {
+        networkPassphrase: Networks.TESTNET,
       });
 
       setStep('submitting');

@@ -1,0 +1,69 @@
+import { TRANSPORT } from '@trezor/transport';
+import { TypedEmitter } from '@trezor/utils';
+import { DEVICE, DecodedTrezorPushNotification, TransportError, TransportInfo } from '../events';
+import { Device } from './Device';
+import { ConnectSettings, DeviceUniquePath, StaticSessionId } from '../types';
+interface DeviceListEvents {
+    [TRANSPORT.START]: TransportInfo;
+    [TRANSPORT.ERROR]: TransportError;
+    [DEVICE.CONNECT]: Device;
+    [DEVICE.CONNECT_UNACQUIRED]: Device;
+    [DEVICE.TREZOR_PUSH_NOTIFICATION]: DecodedTrezorPushNotification & {
+        device: Device;
+    };
+    [DEVICE.DISCONNECT]: Device;
+    [DEVICE.CHANGED]: Device;
+}
+export interface IDeviceList {
+    isConnected(): this is DeviceList;
+    pendingConnection(): Promise<void> | undefined;
+    addAuthPenalty: DeviceList['addAuthPenalty'];
+    removeAuthPenalty: DeviceList['removeAuthPenalty'];
+    on: DeviceList['on'];
+    once: DeviceList['once'];
+    init: DeviceList['init'];
+    dispose: DeviceList['dispose'];
+}
+export declare const assertDeviceListConnected: (deviceList: IDeviceList) => asserts deviceList is DeviceList;
+type ConstructorParams = Pick<ConnectSettings, 'priority' | 'debug' | 'manifest'> & {
+    messages: Record<string, any>;
+};
+type InitParams = Pick<ConnectSettings, 'transports' | 'pendingTransportEvent' | 'transportReconnect'>;
+export declare class DeviceList extends TypedEmitter<DeviceListEvents> implements IDeviceList {
+    private readonly transportManagers;
+    private transports;
+    private devices;
+    private deviceCounter;
+    private readonly handshakeLock;
+    private readonly authPenaltyManager;
+    private updateTransports;
+    private getConnectedTransports;
+    isConnected(): this is DeviceList;
+    pendingConnection(): Promise<void> | undefined;
+    getActiveTransports(): {
+        apiType: "usb" | "bluetooth" | "udp";
+        type: "BridgeTransport" | "NodeUsbTransport" | "WebUsbTransport" | "UdpTransport" | "NativeUsbTransport" | "BluetoothTransport" | "NativeBluetoothTransport";
+        version: string;
+        outdated: boolean;
+    }[];
+    constructor({ messages, priority, debug, manifest }: ConstructorParams);
+    private onDeviceConnected;
+    private onPushNotification;
+    private onBatteryLevel;
+    private getOrCreateTransportManager;
+    init({ transports, transportReconnect, pendingTransportEvent }?: InitParams): Promise<void>;
+    private initializeTransport;
+    private waitForDevices;
+    getDeviceCount(): number;
+    getPrioritizedDevices(): Device[];
+    getAllDevices(): readonly Device[];
+    getOnlyDevice(): Device | undefined;
+    getDeviceByPath(path: DeviceUniquePath): Device | undefined;
+    getDeviceByStaticState(state: StaticSessionId): Device | undefined;
+    dispose(): Promise<void>;
+    enumerate(): Promise<void>;
+    addAuthPenalty(device: Device): void;
+    removeAuthPenalty(device: Device): void;
+}
+export {};
+//# sourceMappingURL=DeviceList.d.ts.map

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { kit } from '../lib/kit';
+import { StellarWalletsKit } from '../lib/kit';
 
 interface WalletConnectProps {
   walletAddress: string | null;
@@ -19,13 +19,8 @@ export default function WalletConnect({
     setLoading(true);
     setError(null);
     try {
-      await kit.openModal({
-        onWalletSelected: async (option) => {
-          kit.setWallet(option.id);
-          const { address } = await kit.getAddress();
-          onConnect(address);
-        },
-      });
+      const { address } = await StellarWalletsKit.authModal();
+      onConnect(address);
     } catch {
       setError('No se pudo conectar. ¿Tienes Freighter instalado en Testnet?');
     } finally {

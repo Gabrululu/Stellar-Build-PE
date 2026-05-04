@@ -1,0 +1,58 @@
+import { InMemorySigner } from '@near-js/signers';
+import { JsonRpcProvider, FailoverRpcProvider } from '@near-js/providers';
+/**
+ * @param config Contains connection info details
+ * @returns {Provider}
+ */
+function getProvider(config) {
+    switch (config.type) {
+        case undefined:
+            return config;
+        case 'JsonRpcProvider': return new JsonRpcProvider({ ...config.args });
+        case 'FailoverRpcProvider': {
+            const providers = (config?.args || []).map((arg) => new JsonRpcProvider(arg));
+            return new FailoverRpcProvider(providers);
+        }
+        default: throw new Error(`Unknown provider type ${config.type}`);
+    }
+}
+/**
+ * @param config Contains connection info details
+ * @returns {Signer}
+ */
+function getSigner(config) {
+    switch (config.type) {
+        case undefined:
+            return config;
+        case 'InMemorySigner': {
+            return new InMemorySigner(config.keyStore);
+        }
+        default: throw new Error(`Unknown signer type ${config.type}`);
+    }
+}
+/**
+ * Connects an account to a given network via a given provider
+ */
+export class Connection {
+    networkId;
+    provider;
+    signer;
+    jsvmAccountId;
+    constructor(networkId, provider, signer, jsvmAccountId) {
+        this.networkId = networkId;
+        this.provider = provider;
+        this.signer = signer;
+        this.jsvmAccountId = jsvmAccountId;
+    }
+    getConnection() {
+        return this;
+    }
+    /**
+     * @param config Contains connection info details
+     */
+    static fromConfig(config) {
+        const provider = getProvider(config.provider);
+        const signer = getSigner(config.signer);
+        return new Connection(config.networkId, provider, signer, config.jsvmAccountId);
+    }
+}

@@ -1,0 +1,46 @@
+import type { IFRAME } from './iframe';
+import type { Device } from '../device/Device';
+import type { TrezorConnect } from '../types/api';
+import type { CommonParams, DeviceIdentity } from '../types/params';
+type UnwrappedResponse<Response> = Response extends Promise<infer R> ? R extends {
+    success: true;
+    payload: infer P;
+} ? P : never : void;
+type OverloadedMethod<Method, Params extends Record<string, string>> = Method extends {
+    (params: infer P1): infer R1;
+    (params: infer P2): infer R2;
+} ? ((params: P1 & Params) => R1) | ((params: P2 & Params) => R2) : Method extends (...args: infer P) => infer R ? (params: Params & P[0]) => R : never;
+type UnwrappedMethod<Method, Params extends Record<string, string>> = Method extends () => infer R ? (params: Params & CommonParams) => R : OverloadedMethod<Method, Params>;
+type IsMethodCallable<T> = T extends (...args: any[]) => infer R ? R extends Promise<{
+    success: boolean;
+}> ? R : never : never;
+type CallApi = {
+    [K in keyof TrezorConnect]: IsMethodCallable<TrezorConnect[K]> extends never ? never : UnwrappedMethod<TrezorConnect[K], {
+        method: K;
+    }>;
+};
+type TopLevelMethods = 'cancel' | 'dispose' | 'init' | 'manifest' | 'off' | 'on' | 'removeAllListeners' | 'setTransports' | 'uiResponse';
+export type CallMethodKeys = Exclude<keyof CallApi, TopLevelMethods>;
+export type CallMethodUnion = CallApi[CallMethodKeys];
+export type CallMethodPayload = Parameters<CallMethodUnion>[0];
+export type CallMethodParams<M extends CallMethodKeys> = Parameters<CallApi[M]>[0];
+export type CallMethodResponse<M extends CallMethodKeys> = UnwrappedResponse<ReturnType<CallApi[M]>>;
+export type CallMethodAnyResponse = ReturnType<CallMethodUnion>;
+export type CallMethod = (params: CallMethodPayload) => Promise<any>;
+export interface IFrameCallMessage {
+    id: number;
+    type: typeof IFRAME.CALL;
+    payload: CallMethodPayload;
+}
+export declare const RESPONSE_EVENT = "RESPONSE_EVENT";
+export interface MethodResponseMessage {
+    event: typeof RESPONSE_EVENT;
+    type: typeof RESPONSE_EVENT;
+    id: number;
+    success: boolean;
+    payload: CallMethodResponse<CallMethodKeys>;
+    device?: DeviceIdentity;
+}
+export declare const createResponseMessage: (id: number, success: boolean, payload: any, device?: Device) => MethodResponseMessage;
+export {};
+//# sourceMappingURL=call.d.ts.map

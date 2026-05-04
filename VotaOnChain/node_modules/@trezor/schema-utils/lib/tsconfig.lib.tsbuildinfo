@@ -1,0 +1,1 @@
+{"root":["../src/codegen.ts","../src/errors.ts","../src/index.ts","../src/utils.ts","../src/custom-types/array-buffer.ts","../src/custom-types/buffer.ts","../src/custom-types/index.ts","../src/custom-types/keyof-enum.ts","../src/custom-types/uint.ts"],"version":"5.8.3"}

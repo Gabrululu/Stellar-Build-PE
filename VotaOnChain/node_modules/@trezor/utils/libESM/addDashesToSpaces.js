@@ -1,0 +1,1 @@
+export const addDashesToSpaces = inputString => inputString.replace(/\s+/g, '-');

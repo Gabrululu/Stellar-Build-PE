@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WebsocketClient = void 0;
+var client_1 = require("./client");
+Object.defineProperty(exports, "WebsocketClient", {
+  enumerable: true,
+  get: function () {
+    return client_1.WebsocketClient;
+  }
+});
+//# sourceMappingURL=index.js.map

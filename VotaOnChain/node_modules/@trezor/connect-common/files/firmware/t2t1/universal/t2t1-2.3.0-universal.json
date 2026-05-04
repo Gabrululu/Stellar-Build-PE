@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "version": [2, 3, 0],
+    "min_bridge_version": [2, 0, 7],
+    "min_bootloader_version": [2, 0, 0],
+    "min_firmware_version": [2, 0, 8],
+    "firmware_revision": "0b7a8449f8dd003fc415262b05102d113247d3de",
+    "translations": {},
+    "url": "firmware/t2t1/trezor-t2t1-2.3.0.bin",
+    "fingerprint": "212929f63fe1393e2ff57e06537a38cff281e3cfb3a4e17235079e2f08871e6c",
+    "changelog": "* Introduce Wipe code\n* Introduce SD card protection\n* Introduce passphrase cache\n* U2F UX improvements\n* Security fixes"
+}

@@ -1,0 +1,41 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.callThpMessage = void 0;
+const receive_1 = require("./receive");
+const send_1 = require("./send");
+const callThpMessage = async ({
+  thpState,
+  chunks,
+  apiWrite,
+  apiRead,
+  signal,
+  graceful,
+  logger
+}) => {
+  const sendResult = await (0, send_1.sendThpMessage)({
+    chunks,
+    thpState,
+    apiWrite,
+    apiRead,
+    signal,
+    graceful,
+    logger
+  });
+  if (!sendResult.success) {
+    return sendResult;
+  }
+  const receiveResult = await (0, receive_1.receiveThpMessage)({
+    thpState,
+    apiWrite,
+    apiRead,
+    signal,
+    graceful,
+    logger
+  });
+  return receiveResult;
+};
+exports.callThpMessage = callThpMessage;
+//# sourceMappingURL=call.js.map

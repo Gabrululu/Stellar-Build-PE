@@ -44,12 +44,12 @@ Ver [VotaOnChain/README.md](./VotaOnChain/README.md) para setup completo y [Vota
 
 ---
 
-## Skill de AI — Stellar Development (Español)
+## Skill de AI — Stellar Development
 
-Skill para asistentes de AI con conocimiento profundo del ecosistema Stellar, escrito en español peruano.
+Skill para asistentes de AI con conocimiento profundo del ecosistema Stellar.
 
 ```
-stellar-dev-skill/
+Stellar-dev-skill/
 └── skill/
     ├── SKILL.md                # Guía principal — arquitectura, conceptos core, contexto Perú
     ├── contracts-soroban.md    # Contratos Rust: storage, auth, deploy, upgrade, TTL
@@ -66,14 +66,14 @@ stellar-dev-skill/
     └── resources.md            # Links y documentación oficial
 ```
 
-Basado en [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill), adaptado con contexto peruano.
+Basado en [stellar/stellar-dev-skill](https://github.com/stellar/Stellar-dev-skill), adaptado con contexto peruano.
 
 **Instalación en Claude Code:**
 ```bash
-cp -r stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
+cp -r Stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
 ```
 
-Ver [stellar-dev-skill/README.md](./stellar-dev-skill/README.md) para más opciones de instalación.
+Ver [Stellar-dev-skill/README.md](./Stellar-dev-skill/README.md) para más opciones de instalación.
 
 ---
 
@@ -114,7 +114,7 @@ A diferencia de otras guías enfocadas en SPEI (México) o PIX (Brasil), esta se
 
 ## Armada por la comunidad
 
-**Ethereum Lima · StarMaker by BAF · Stellar**
+**Ethereum Lima · StarMaker by BAF · Stellar · Minted In Peru **
 
 ---
 

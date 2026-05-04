@@ -1,10 +1,10 @@
-# Stellar Development Skill — Español Peruano
+# Stellar Development Skill
 
 Skill de AI para desarrollo moderno en Stellar, con mejores prácticas actuales.
 
 Traducción y adaptación al español de [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill), con ejemplos y contexto relevante para Perú y LATAM.
 
-> **Nota:** Este skill forma parte de [Stellar Build PE](https://github.com/Stellar-Build-PE) — guía comunitaria para el Buildathon Ethereum Lima × Stellar.
+> **Nota:** Este skill forma parte de [Stellar Build PE](https://github.com/Stellar-Build-PE) — guía comunitaria para el Buildathon × Stellar.
 
 ---
 
@@ -111,7 +111,7 @@ Si encuentras información desactualizada o quieres agregar ejemplos:
 
 - Basado en [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill) (Apache-2.0)
 - Inspirado en [solana-foundation/solana-dev-skill](https://github.com/solana-foundation/solana-dev-skill)
-- Adaptado para la comunidad que construye en Stellar por[Minted In Peru](https://mintedinpe.com)
+- Adaptado para la comunidad que construye en Stellar por [Minted In Peru](https://mintedinpe.com)
 
 ---
 

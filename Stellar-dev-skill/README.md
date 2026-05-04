@@ -2,7 +2,7 @@
 
 Skill de AI para desarrollo moderno en Stellar, con mejores prácticas actuales.
 
-Traducción y adaptación al español peruano de [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill), con ejemplos y contexto relevante para Perú y LATAM.
+Traducción y adaptación al español de [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill), con ejemplos y contexto relevante para Perú y LATAM.
 
 > **Nota:** Este skill forma parte de [Stellar Build PE](https://github.com/Stellar-Build-PE) — guía comunitaria para el Buildathon Ethereum Lima × Stellar.
 
@@ -37,17 +37,17 @@ El skill usa **divulgación progresiva**: `SKILL.md` cubre el 80% de los casos, 
 
 ```bash
 # Opción 1: Clonar y copiar
-git clone https://github.com/Stellar-Build-PE/stellar-dev-skill
-cp -r stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
+git clone https://github.com/Stellar-Build-PE/Stellar-dev-skill
+cp -r Stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
 
 # Opción 2: Desde este repo (si estás en el proyecto Stellar Build PE)
-# Los archivos ya están en /stellar-dev-skill/skill/
+# Los archivos ya están en /Stellar-dev-skill/skill/
 ```
 
 ### Con npx skills
 
 ```bash
-npx skills add https://github.com/Stellar-Build-PE/stellar-dev-skill
+npx skills add https://github.com/Stellar-Build-PE/Stellar-dev-skill
 ```
 
 ---
@@ -67,7 +67,7 @@ npx skills add https://github.com/Stellar-Build-PE/stellar-dev-skill
 
 ---
 
-## Contexto peruano
+## Contexto
 
 Este skill incluye ejemplos y casos de uso relevantes para Perú:
 
@@ -111,7 +111,7 @@ Si encuentras información desactualizada o quieres agregar ejemplos:
 
 - Basado en [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill) (Apache-2.0)
 - Inspirado en [solana-foundation/solana-dev-skill](https://github.com/solana-foundation/solana-dev-skill)
-- Adaptado para la comunidad Stellar de Perú por [Ethereum Lima](https://ethereumlima.com)
+- Adaptado para la comunidad que construye en Stellar por[Minted In Peru](https://mintedinpe.com)
 
 ---
 
@@ -122,4 +122,4 @@ Apache-2.0 — ver `LICENSE` para detalles.
 ---
 
 > Parte de **Stellar Build PE** — guía comunitaria para el Buildathon Ethereum Lima × Stellar.
-> Hecha con amor por la comunidad peruana Web3.
+> Hecha con amor para la comunidad peruana Web3.

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "stellar-dev",
+  "owner": {
+    "name": "Comunidad Stellar Build PE",
+    "url": "https://stellar.org"
+  },
+  "plugins": [
+    {
+      "name": "stellar-dev-es",
+      "source": "./",
+      "description": "Skills para desarrollo Stellar y Soroban en español peruano"
+    }
+  ]
+}

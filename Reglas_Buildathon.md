@@ -1,6 +1,9 @@
 # Reglas y Estructura — Buildathon Ethereum Lima × Stellar
 
-Toda la información oficial sobre fechas, entregables, criterios de evaluación y agenda del evento.
+Toda la información oficial sobre fechas, entregables y criterios de evaluación del evento.
+
+- **Presentacion del evento:** [Ver en Canva](https://canva.link/yegtdzcdycbnsmd)
+- **Chat de comunicacion y soporte:** [Grupo de WhatsApp](https://chat.whatsapp.com/JB5clEPH9uK2iwzeHkMPOJ)
 
 > Organizado por **Ethereum Lima** y **Stellar**, con colaboración de **BAF** y el programa **StarMaker**.
 
@@ -15,60 +18,6 @@ Toda la información oficial sobre fechas, entregables, criterios de evaluación
 | Anuncio de ganadores | Por confirmar |
 
 > Después del evento tienes **5 días** para desarrollar y pulir tu proyecto antes del envío final.
-
----
-
-## Agenda del Evento — 2 de mayo
-
-### Bloque 1: Apertura e Inspiración (4:00 p.m. - 5:00 p.m.)
-
-**4:00 p.m. — Bienvenida y Contexto**
-- Presentación de **ETH Lima**: Ruta de Puqi
-- Introducción a **StarMaker by BAF** a cargo de Eduardo y Gaby
-- Explicación de la dinámica y formato de la Buildathon
-
-**4:30 p.m. — Inmersión en el ecosistema**
-- Sondeo de nivel técnico y conocimientos previos en Web3
-- Charla introductoria: ¿Por qué construir en Stellar hoy?
-- Dinámica de grupo: lluvia de ideas inicial y formación de alianzas
-
----
-
-### Bloque 2: Fundamentos Técnicos y Producto (5:00 p.m. - 6:00 p.m.)
-
-**5:00 p.m. — Masterclass Técnica**
-- Funcionamiento profundo de la red Stellar y sus ventajas competitivas
-
-**5:30 p.m. — Del papel al MVP**
-- Estrategia de Producto y Go-To-Market (GTM) para soluciones Web3
-- Consolidación final de equipos de trabajo
-
----
-
-### Bloque 3: Acción y Construcción (6:00 p.m. - 7:00 p.m.)
-
-**6:00 p.m. — Vibecoding**
-- Sesión en vivo de prototipado rápido integrando Stellar desde cero
-
-**6:30 p.m. — Sprint de Desarrollo**
-- Inicio oficial de la construcción con mentoría personalizada equipo por equipo
-
----
-
-### Bloque 4: Oportunidades y Cierre (7:00 p.m. - 8:00 p.m.)
-
-**7:00 p.m. — Financiamiento**
-- Introducción al **Stellar Community Fund (SCF)** y cómo obtener recursos para tu proyecto
-
-**7:15 p.m. — Caso de Éxito**
-- Presentación de **Juntta**: su historia, evolución y experiencia escalando en Stellar y el SCF
-
-**7:45 p.m. — Cierre y Networking**
-- Indicaciones sobre los canales de comunicación oficiales para el seguimiento del evento
-- Palabras finales y foto grupal de los builders
-- Networking con pizzas y gaseosas
-
-**8:00 p.m. — Fin del Evento**
 
 ---
 
@@ -182,7 +131,7 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 ## Soporte post-evento
 
 - **Soporte técnico** durante los 4 días posteriores al evento vía chat del evento
-- **Canales oficiales:** WhatsApp y Telegram del evento
+- **Chat oficial:** [Grupo de WhatsApp](https://chat.whatsapp.com/JB5clEPH9uK2iwzeHkMPOJ)
 - **Stellar Build Lima** plataforma para subir el proyecto con recursos y documentación sobre Stellar
 
 ---

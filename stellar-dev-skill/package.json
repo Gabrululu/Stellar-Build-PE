@@ -1,0 +1,10 @@
+{
+  "name": "stellar-dev",
+  "description": "Desarrollo completo en Stellar: contratos Soroban (Rust), stellar-sdk (JS/Python), APIs RPC/Horizon, activos, wallets, testing, seguridad y ecosistema — en español peruano",
+  "version": "1.0.0",
+  "author": {
+    "name": "Comunidad Stellar Build PE",
+    "url": "https://github.com/Stellar-Build-PE"
+  },
+  "skills": "./skill/"
+}

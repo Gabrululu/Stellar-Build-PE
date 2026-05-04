@@ -11,7 +11,7 @@ El objetivo es que cada participante — sin importar su experiencia con Stellar
 
 | # | Archivo | Qué vas a encontrar |
 |---|---|---|
-| 0 | [Reglas_Buildathon.md](./Reglas_Buildathon.md) | Lee esto primero — Fechas, entregables, premios, criterios de evaluación y agenda |
+| 0 | [Reglas_Buildathon.md](./Reglas_Buildathon.md) | Lee esto primero — Fechas, entregables, premios y criterios de evaluación |
 | 1 | [SetUp_AI.md](./SetUp_AI.md) | Opciones de AI sin tarjeta de crédito ni suscripción |
 | 2 | [Guia_Claude_Code.md](./Guia_Claude_Code.md) | Workflows con Claude Code: plan mode, agentes paralelos, CLAUDE.md |
 | 3 | [SetUp_Dev.md](./SetUp_Dev.md) | Testnet, configuración de Soroban, Freighter, errores comunes |
@@ -19,6 +19,61 @@ El objetivo es que cada participante — sin importar su experiencia con Stellar
 | 5 | [Recursos_Buildathon.md](./Recursos_Buildathon.md) | Repos de referencia, documentación oficial, videos y herramientas |
 | 6 | [Herramientas_AI.md](./Herramientas_AI.md) | Tools de AI para Stellar, asistentes de código, frameworks multi-agente |
 | 7 | [Lendara_Protocol.md](./Lendara_Protocol.md) | Protocolo de inversiones tokenizadas — SDK listo para usar con 5 templates |
+
+---
+
+## Proyectos de ejemplo incluidos
+
+### VotaOnChain
+
+Mini dApp de votación comunitaria on-chain — ejemplo de referencia para builders.
+
+**Stack:** React + TypeScript + Tailwind · Soroban (contrato en Rust) · Stellar Wallets Kit · Neon PostgreSQL (opcional)
+
+```
+VotaOnChain/
+├── contract/          # Contrato Soroban en Rust — votación on-chain con 4 tests
+└── src/
+    ├── components/    # WalletConnect · VoteForm · Results
+    └── lib/           # stellar.ts (RPC) · kit.ts (wallets) · db.ts (Neon)
+```
+
+Flujo: el usuario conecta Freighter → vota → el voto se registra en Soroban → los resultados se leen en tiempo real desde la cadena.
+
+Ver [VotaOnChain/README.md](./VotaOnChain/README.md) para setup completo y [VotaOnChain/GUIA.md](./VotaOnChain/GUIA.md) para el paso a paso detallado.
+
+---
+
+## Skill de AI — Stellar Development (Español)
+
+Skill para asistentes de AI con conocimiento profundo del ecosistema Stellar, escrito en español peruano.
+
+```
+stellar-dev-skill/
+└── skill/
+    ├── SKILL.md                # Guía principal — arquitectura, conceptos core, contexto Perú
+    ├── contracts-soroban.md    # Contratos Rust: storage, auth, deploy, upgrade, TTL
+    ├── frontend-stellar-sdk.md # React/Next.js, Stellar Wallets Kit, bindings TypeScript
+    ├── testing.md              # Tests unitarios, testnet, Docker Quickstart
+    ├── stellar-assets.md       # Activos clásicos, SAC, emisión, trustlines
+    ├── api-rpc-horizon.md      # RPC vs Horizon, streaming, fees, errores
+    ├── security.md             # Checklists, require_auth, auditoría
+    ├── common-pitfalls.md      # Errores frecuentes y soluciones
+    ├── advanced-patterns.md    # Factory, vaults, multicall, escrow, circuit breaker
+    ├── standards-reference.md  # SEP-1/10/24/38/41 con código
+    ├── ecosystem.md            # Blend, Soroswap, wallets, herramientas, LATAM
+    ├── zk-proofs.md            # ZK proofs en Soroban
+    └── resources.md            # Links y documentación oficial
+```
+
+Basado en [stellar/stellar-dev-skill](https://github.com/stellar/stellar-dev-skill), adaptado con contexto peruano.
+
+**Instalación en Claude Code:**
+```bash
+cp -r stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
+```
+
+Ver [stellar-dev-skill/README.md](./stellar-dev-skill/README.md) para más opciones de instalación.
 
 ---
 
@@ -31,6 +86,8 @@ El **Buildathon Ethereum Lima × Stellar** es un evento intensivo de un día enf
 - **Formato:** Individual o equipos de hasta 3 personas
 - **Requisito:** Asistir presencialmente el 2 de mayo para ser participante válido
 - **Premios:** $300 USD en total ($150 / $100 / $50)
+- **Presentacion del evento:** [Ver en Canva](https://canva.link/yegtdzcdycbnsmd)
+- **Chat de comunicacion y soporte:** [Grupo de WhatsApp](https://chat.whatsapp.com/JB5clEPH9uK2iwzeHkMPOJ)
 
 ---
 

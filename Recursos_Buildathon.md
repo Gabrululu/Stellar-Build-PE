@@ -1,6 +1,6 @@
 # Recursos para la Buildathon
 
-Repos de referencia, documentación, videos y herramientas útiles para Stellar Build PE.
+Repos de referencia, documentación y herramientas útiles para Stellar Build PE.
 
 ---
 
@@ -51,6 +51,7 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ### Trustless Work — Escrow as a Service
 - **Qué es:** Escrow descentralizado sobre Stellar
+- **Docs:** https://docs.trustlesswork.com
 - **Útil para:** Marketplaces, freelancing, pagos condicionales
 
 ### Lendara Protocol — Inversiones Tokenizadas
@@ -64,10 +65,10 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ## Anchors y On/Off Ramps
 
-| Servicio | Región | Moneda | Notas |
-|---|---|---|---|
-| MoneyGram Access | Global | Múltiples | Cash in/out vía MoneyGram |
-| Beans App | LatAm | Múltiples | Wallet con soporte Stellar |
+| Servicio | Región | Notas |
+|---|---|---|
+| MoneyGram Access | Global | Cash in/out vía MoneyGram |
+| Beans App | LatAm | Wallet con soporte Stellar |
 
 > **Nota para Perú:** El ecosistema de anchors directos PEN↔Stellar está en desarrollo. Para la buildathon, usa testnet y simula el flujo de on/off ramp. Plataformas como Bitso, Buda.com o Binance P2P permiten comprar XLM/USDC pero no son anchors SEP-24 formales. Yape y Plin pueden usarse como punto de entrada simulado para demos de on-ramp.
 
@@ -76,8 +77,8 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 ## Repos de ejemplo y starters
 
 ### Contratos Soroban
-- **soroban-examples** — Ejemplos oficiales de contratos Soroban
-- **OpenZeppelin Stellar** — Librería de contratos seguros para Soroban · [Docs](https://docs.openzeppelin.com/stellar-contracts) · [GitHub](https://github.com/OpenZeppelin/stellar-contracts) · [Wizard](https://wizard.openzeppelin.com/stellar)
+- **soroban-examples** — Ejemplos oficiales · https://github.com/stellar/soroban-examples
+- **OpenZeppelin Stellar** — Contratos seguros para Soroban · [Docs](https://docs.openzeppelin.com/stellar-contracts) · [GitHub](https://github.com/OpenZeppelin/stellar-contracts) · [Wizard](https://wizard.openzeppelin.com/stellar)
 
 ### Frontend
 - **Starter con Next.js + Stellar SDK** — Template básico de app web con Stellar
@@ -96,22 +97,13 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ---
 
-## Videos y tutoriales
-
-- **Stellar Developer Workshops** — Talleres oficiales en YouTube
-- **Soroban Quick Start** — Tutorial paso a paso para tu primer contrato
-- **Building DeFi on Stellar** — Serie sobre protocolos DeFi
-
----
-
 ## Herramientas de desarrollo
 
-| Herramienta | Uso |
-|---|---|
-| Stellar Laboratory | Crear y enviar transacciones manualmente |
-| Stellar Expert | Block explorer para testnet y mainnet |
-| Friendbot | Fondear cuentas en testnet |
-| Soroban CLI | Compilar, deployar y llamar contratos |
+| Herramienta | Link | Uso |
+|---|---|---|
+| Stellar Expert | https://stellar.expert | Block explorer para testnet y mainnet |
+| Friendbot | https://friendbot.stellar.org | Fondear cuentas en testnet |
+| Stellar CLI | https://developers.stellar.org/docs/tools/developer-tools/cli | Compilar, deployar y llamar contratos |
 
 ---
 

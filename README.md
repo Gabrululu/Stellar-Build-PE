@@ -1,7 +1,7 @@
 
 # Stellar Build PE — Guía para Builders
 
-Guía práctica para desarrolladores que participan en el **Buildathon Ethereum Lima × Stellar** (2 de mayo, 2026), organizado por Ethereum Lima con colaboración de BAF y el programa StarMaker.
+Guía práctica para desarrolladores que participan en el **Buildathon Ethereum Lima × Stellar**, organizado por BAF y el programa StarMaker en colaboración con Ethereum Lima.
 
 El objetivo es que cada participante — sin importar su experiencia con Stellar, acceso a herramientas de AI pagas, o hardware — pueda construir algo funcional y enviarlo antes del 8 de mayo.
 
@@ -119,7 +119,7 @@ A diferencia de otras guías enfocadas en SPEI (México) o PIX (Brasil), esta se
 
 ## Contribuir
 
-Si encuentras un error o quieres agregar algo, abre un issue o un PR. Esta guía es de la comunidad.
+Si encuentras un error o quieres agregar algo, abre un issue o un PR. Esta guía es por y para la comunidad.
 
 ---
 

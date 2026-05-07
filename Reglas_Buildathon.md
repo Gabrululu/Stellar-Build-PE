@@ -66,7 +66,7 @@ Enviar todo a través de la plataforma Stellar Build:
 |---|---|
 | **MVP funcional** | Demo operativa, deployada en testnet |
 | **Repositorio público** | GitHub u otro, con explicación del reto y contratos |
-| **Video Pitch** | 3 a 5 minutos, en español, el equipo debe aparecer en cámara |
+| **Video Pitch** | 3 a 5 minutos, en español o inglés, el equipo debe aparecer en cámara |
 
 > **Herramienta recomendada para grabar:** [OpenVid](https://openvid.dev) — graba pantalla + cámara desde el navegador, sin instalar nada.
 
@@ -140,8 +140,8 @@ Enviar todo a través de la plataforma Stellar Build:
 
 - [ ] MVP deployado en Stellar Testnet y funcionando
 - [ ] Repositorio público con README claro y contratos incluidos
-- [ ] Video pitch grabado (3-5 min, en español, equipo en cámara)
+- [ ] Video pitch grabado (3-5 min, en español o inglés, equipo en cámara)
 - [ ] Video subido a YouTube, Loom o Drive con enlace público
 - [ ] Mockup listo (Figma, Whimsical, Canva o similar)
-- [ ] Opcional: Post publicado en X mencionando a todas las cuentas requeridas
-- [ ] Todo enviado por la plataforma Sellar Build Lima antes del 8 de mayo, 11:59 PM
+- [ ] Opcional: Post publicado en X mencionando a todas las cuentas mencionadas
+- [ ] Todo enviado por la plataforma Stellar Build Lima antes del 8 de mayo, 11:59 PM

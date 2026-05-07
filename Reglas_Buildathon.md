@@ -78,17 +78,13 @@ Enviar todo a través de la plataforma Stellar Build:
 4. Uso de Stellar y contratos deployados
 5. Impacto social o tecnológico
 
-### Post en X (Twitter)
-
-Publicar mostrando video o imagen del proyecto, mencionando a:
-`@EthereumLima` `@BuildOnStellar` `@StellarOrg` `@TheBAFNetwork` `@StarMaker_LATAM`
-
 ### Opcionales (suman puntos)
 
 - Mockup del producto (Figma, Whimsical, Canva, etc.)
 - Flujo de usuario (user flow)
 - Pantallas clave del producto
 - Esquema visual de la solución
+- Post en X mostrando tu proyecto y mencionando `@EthereumLima` `@BuildOnStellar` `@StellarOrg` `@TheBAFNetwork` `@StarMaker_LATAM`
 - Publica post #BuildingInPublic
 
 ---
@@ -127,14 +123,6 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 - Se deben cumplir los tiempos establecidos por la organización
 - La participación implica la aceptación de estas bases
 - La organización se reserva el derecho de modificar aspectos logísticos del evento
-
----
-
-## Soporte post-evento
-
-- **Soporte técnico** durante los 4 días posteriores al evento vía chat del evento
-- **Chat oficial:** [Grupo de WhatsApp](https://chat.whatsapp.com/JB5clEPH9uK2iwzeHkMPOJ)
-- **Stellar Build Lima** plataforma para subir el proyecto con recursos y documentación sobre Stellar
 
 ---
 

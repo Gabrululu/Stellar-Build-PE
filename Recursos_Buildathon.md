@@ -16,6 +16,15 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ---
 
+## Proyectos en Stellar — Para inspirarte
+
+| Recurso | Link | Para qué |
+|---|---|---|
+| **Stellar Ecosystem** | https://stellar.org/ecosystem | Directorio de proyectos y apps construidas sobre Stellar |
+| **Community Fund Projects** | https://communityfund.stellar.org/projects | Proyectos financiados por la comunidad Stellar — casos de uso reales |
+
+---
+
 ## Protocolos DeFi en Stellar
 
 ### Blend Protocol — Lending/Borrowing
@@ -68,7 +77,7 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ### Contratos Soroban
 - **soroban-examples** — Ejemplos oficiales de contratos Soroban
-- **OpenZeppelin Stellar** — Librería de contratos seguros para Soroban
+- **OpenZeppelin Stellar** — Librería de contratos seguros para Soroban · [Docs](https://docs.openzeppelin.com/stellar-contracts) · [GitHub](https://github.com/OpenZeppelin/stellar-contracts) · [Wizard](https://wizard.openzeppelin.com/stellar)
 
 ### Frontend
 - **Starter con Next.js + Stellar SDK** — Template básico de app web con Stellar
@@ -76,6 +85,14 @@ Repos de referencia, documentación, videos y herramientas útiles para Stellar 
 
 ### Full Stack
 - **Stellar Demo Wallet** — Wallet de referencia que implementa SEPs
+
+---
+
+## Herramientas para grabar demos y pitch
+
+| Herramienta | Link | Para qué |
+|---|---|---|
+| **OpenVid** | https://openvid.dev | Grabar demos de producto — pantalla + cámara, sin instalar nada |
 
 ---
 

@@ -250,6 +250,13 @@ response = server.submit_transaction(tx)
 
 ---
 
+## Directorio de proyectos Stellar
+
+- **Stellar Ecosystem** — https://stellar.org/ecosystem — apps y proyectos en producción sobre Stellar
+- **Community Fund Projects** — https://communityfund.stellar.org/projects — proyectos financiados por la comunidad Stellar
+
+---
+
 ## Contexto del ecosistema para Perú y LATAM
 
 ### Proyectos relevantes activos

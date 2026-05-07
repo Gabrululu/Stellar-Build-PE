@@ -14,10 +14,10 @@ Toda la información oficial sobre fechas, entregables y criterios de evaluació
 | Hito | Fecha |
 |---|---|
 | Buildathon (evento presencial) | 2 de mayo |
-| Envío de proyectos | Hasta el 7 de mayo, 11:59 PM |
+| Envío de proyectos | Hasta el 8 de mayo, 11:59 PM |
 | Anuncio de ganadores | Por confirmar |
 
-> Después del evento tienes **5 días** para desarrollar y pulir tu proyecto antes del envío final.
+> Después del evento tienes **6 días** para desarrollar y pulir tu proyecto antes del envío final.
 
 ---
 
@@ -56,7 +56,7 @@ Para que tu proyecto sea considerado, debe cumplir todo lo siguiente:
 
 ---
 
-## Entregables (antes del 7 de mayo, 11:59 PM)
+## Entregables (antes del 8 de mayo, 11:59 PM)
 
 Enviar todo a través de la plataforma Stellar Build:
 
@@ -67,6 +67,8 @@ Enviar todo a través de la plataforma Stellar Build:
 | **MVP funcional** | Demo operativa, deployada en testnet |
 | **Repositorio público** | GitHub u otro, con explicación del reto y contratos |
 | **Video Pitch** | 3 a 5 minutos, en español, el equipo debe aparecer en cámara |
+
+> **Herramienta recomendada para grabar:** [OpenVid](https://openvid.dev) — graba pantalla + cámara desde el navegador, sin instalar nada.
 
 ### El video pitch debe explicar
 
@@ -140,13 +142,13 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 
 1. **Define el problema con precisión** — una oración que cualquiera entienda. Los jueces valoran claridad antes que ambición.
 2. **Pon a Stellar en el centro** — no uses Stellar solo para una transferencia básica. Usa Soroban, SEPs, o protocolos del ecosistema (Blend, Trustless Work, Lendara).
-3. **Despliega en testnet antes del día 7** — un contrato sin deploy no es un MVP válido según las bases.
+3. **Despliega en testnet antes del día 8** — un contrato sin deploy no es un MVP válido según las bases.
 4. **Graba el video con el equipo en cámara** — es requisito explícito. Practica el guión antes de grabar.
 5. **Cuida el mockup** — tiene su propio criterio de evaluación. Un Figma con 4-5 pantallas claras puede marcar la diferencia.
 
 ---
 
-## Checklist de entrega (antes del 7 de mayo)
+## Checklist de entrega (antes del 8 de mayo)
 
 - [ ] MVP deployado en Stellar Testnet y funcionando
 - [ ] Repositorio público con README claro y contratos incluidos
@@ -154,4 +156,4 @@ Publicar mostrando video o imagen del proyecto, mencionando a:
 - [ ] Video subido a YouTube, Loom o Drive con enlace público
 - [ ] Mockup listo (Figma, Whimsical, Canva o similar)
 - [ ] Opcional: Post publicado en X mencionando a todas las cuentas requeridas
-- [ ] Todo enviado por la plataforma Sellar Build Lima antes del 7 de mayo, 11:59 PM
+- [ ] Todo enviado por la plataforma Sellar Build Lima antes del 8 de mayo, 11:59 PM

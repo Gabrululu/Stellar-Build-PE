@@ -25,7 +25,7 @@ Links curados de documentación oficial, tutoriales, herramientas y comunidad.
 | Getting Started con Soroban | https://developers.stellar.org/docs/build/smart-contracts/getting-started |
 | soroban-sdk (docs.rs) | https://docs.rs/soroban-sdk |
 | Ejemplos de contratos | https://github.com/stellar/soroban-examples |
-| OpenZeppelin para Stellar | https://github.com/OpenZeppelin/stellar-contracts |
+| OpenZeppelin para Stellar | https://docs.openzeppelin.com/stellar-contracts · [GitHub](https://github.com/OpenZeppelin/stellar-contracts) · [Wizard](https://wizard.openzeppelin.com/stellar) |
 | Soroban CLI referencia | https://developers.stellar.org/docs/tools/developer-tools/cli |
 
 ---
@@ -119,7 +119,7 @@ kaankacar/soroban-react-dapp    → Template React + Soroban
 ```bash
 # Rust + target WASM
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup target add wasm32-unknown-unknown
+rustup target add wasm32v1-none   # Rust 1.84+ requerido
 
 # Soroban CLI
 cargo install --locked soroban-cli --features opt

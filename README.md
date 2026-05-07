@@ -3,7 +3,7 @@
 
 Guía práctica para desarrolladores que participan en el **Buildathon Ethereum Lima × Stellar** (2 de mayo, 2026), organizado por Ethereum Lima con colaboración de BAF y el programa StarMaker.
 
-El objetivo es que cada participante — sin importar su experiencia con Stellar, acceso a herramientas de AI pagas, o hardware — pueda construir algo funcional y enviarlo antes del 7 de mayo.
+El objetivo es que cada participante — sin importar su experiencia con Stellar, acceso a herramientas de AI pagas, o hardware — pueda construir algo funcional y enviarlo antes del 8 de mayo.
 
 ---
 
@@ -82,7 +82,7 @@ Ver [Stellar-dev-skill/README.md](./Stellar-dev-skill/README.md) para más opcio
 El **Buildathon Ethereum Lima × Stellar** es un evento intensivo de un día enfocado en la creación de soluciones tecnológicas sobre la blockchain de Stellar, dirigido a desarrolladores, diseñadores, builders y entusiastas Web3 de todos los niveles.
 
 - **Evento presencial:** 2 de mayo, 4:00 p.m. – 8:00 p.m.
-- **Plazo de entrega:** 7 de mayo, 11:59 PM (5 días post-evento para desarrollar)
+- **Plazo de entrega:** 8 de mayo, 11:59 PM (6 días post-evento para desarrollar)
 - **Formato:** Individual o equipos de hasta 3 personas
 - **Requisito:** Asistir presencialmente el 2 de mayo para ser participante válido
 - **Premios:** $300 USD en total ($150 / $100 / $50)

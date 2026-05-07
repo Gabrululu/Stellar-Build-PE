@@ -7,12 +7,12 @@ Todo lo que necesitas configurar antes y durante la buildathon para trabajar con
 ## Pre-requisitos
 
 ```bash
-# Rust (necesario para Soroban)
+# Rust 1.84.0+ (necesario para Soroban)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup target add wasm32-unknown-unknown
+rustup target add wasm32v1-none   # nueva target requerida desde Rust 1.84
 
 # Stellar CLI
-cargo install stellar-cli --locked
+curl -fsSL https://github.com/stellar/stellar-cli/raw/main/install.sh | sh
 
 # Node.js 18+ (para frontend)
 # Recomendado: usar nvm
@@ -193,6 +193,94 @@ mod tests {
 
 ---
 
+## OpenZeppelin para Soroban — Contratos seguros
+
+Si tu proyecto necesita tokens, ownership, pausable o upgradeable, usá los contratos auditados de OpenZeppelin en vez de implementarlos desde cero.
+
+**Docs:** https://docs.openzeppelin.com/stellar-contracts · **GitHub:** https://github.com/OpenZeppelin/stellar-contracts · **Wizard (generador de código):** https://wizard.openzeppelin.com/stellar
+
+### Estructura de workspace (recomendada con OZ)
+
+`stellar contract init my_project` genera un workspace donde cada contrato vive en `contracts/*/`:
+
+```
+my_project/
+├── Cargo.toml           ← workspace root
+└── contracts/
+    └── my_contract/
+        ├── Cargo.toml   ← dependencias del contrato
+        └── src/
+            └── lib.rs
+```
+
+### Dependencias en Cargo.toml
+
+Consultá la versión actual en el repo de stellar-contracts antes de añadir. **Pinear con `=` porque la librería está en desarrollo activo.**
+
+`Cargo.toml` (raíz del workspace):
+```toml
+[workspace.dependencies]
+stellar-tokens          = "=<VERSION>"
+stellar-access          = "=<VERSION>"
+stellar-contract-utils  = "=<VERSION>"
+stellar-macros          = "=<VERSION>"
+```
+
+`contracts/my_contract/Cargo.toml`:
+```toml
+[dependencies]
+soroban-sdk             = { workspace = true }
+stellar-tokens          = { workspace = true }
+stellar-access          = { workspace = true }
+stellar-contract-utils  = { workspace = true }
+stellar-macros          = { workspace = true }
+```
+
+Crates disponibles: `stellar-access`, `stellar-accounts`, `stellar-contract-utils`, `stellar-fee-abstraction`, `stellar-governance`, `stellar-macros`, `stellar-tokens`. Solo añadir los que el contrato realmente usa.
+
+### Patrones de código
+
+Imports usan guiones bajos como raíz del crate (convención Rust):
+
+```rust
+use stellar_tokens::fungible::{Base, FungibleToken};
+use stellar_tokens::fungible::burnable::FungibleBurnable;
+use stellar_access::ownable::Ownable;
+use stellar_contract_utils::pausable::Pausable;
+use stellar_macros::when_not_paused;
+```
+
+Estructura del contrato con macros de guarda:
+
+```rust
+use soroban_sdk::{contract, contractimpl, Env};
+
+#[contract]
+pub struct MyToken;
+
+#[contractimpl]
+impl MyToken {
+    // cada trait es un impl block separado
+}
+
+#[contractimpl]
+impl FungibleToken for MyToken {
+    #[when_not_paused]
+    fn transfer(env: Env, from: Address, to: Address, amount: i128) {
+        // ...
+    }
+}
+```
+
+Macros de guarda disponibles: `#[when_not_paused]`, `#[only_owner]`, `#[derive(Upgradeable)]`.
+
+### Notas de plataforma
+
+- **Las lecturas son gratis en Stellar** — optimizá para minimizar escrituras; lecturas y cómputo son baratos.
+- **TTL de instance storage** es responsabilidad del contrato. OpenZeppelin extiende TTL para otras entradas de storage, pero el contrato debe extender su propia instance storage para evitar expiración.
+
+---
+
 ## Assets importantes en Stellar Testnet
 
 | Asset | Issuer (testnet) | Notas |
@@ -338,7 +426,7 @@ NEXT_PUBLIC_CONTRACT_ID=tu-contract-id-aqui
 
 ## Checklist pre-buildathon
 
-- [ ] Rust + `wasm32-unknown-unknown` target instalado
+- [ ] Rust 1.84+ + target `wasm32v1-none` instalado
 - [ ] Stellar CLI instalado y configurado con testnet
 - [ ] Identidad de testnet creada y fondeada con XLM
 - [ ] Freighter instalado en el navegador y configurado en testnet

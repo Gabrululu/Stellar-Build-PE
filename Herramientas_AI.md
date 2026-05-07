@@ -28,6 +28,27 @@ Tools de AI específicamente útiles para desarrollar sobre Stellar, asistentes 
 - **Costo:** Free tier disponible
 - **Ideal para:** Alternativa a Cursor — tener en cuenta la integración con el ecosistema OpenAI tras la adquisición
 
+## Skills para Claude Code
+
+Skills que extienden el conocimiento de Claude Code con contexto técnico especializado:
+
+| Skill | Link | Qué aporta |
+|---|---|---|
+| **Stellar Dev Skill** | [Stellar-dev-skill/](./Stellar-dev-skill/) | Contratos Soroban, SDK, testnet, patrones LATAM — incluido en este repo |
+| **OpenZeppelin Skills** | https://github.com/OpenZeppelin/openzeppelin-skills | Skills oficiales de OpenZeppelin — seguridad, contratos, auditoría |
+
+**Instalación:**
+```bash
+# Stellar Dev Skill (este repo)
+cp -r Stellar-dev-skill/skill ~/.claude/skills/stellar-dev/
+
+# OpenZeppelin Skills
+git clone https://github.com/OpenZeppelin/openzeppelin-skills
+cp -r openzeppelin-skills/skill ~/.claude/skills/openzeppelin/
+```
+
+---
+
 ## Herramientas Stellar-specific con AI
 
 ### Stellar Turrets

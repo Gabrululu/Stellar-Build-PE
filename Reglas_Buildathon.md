@@ -15,7 +15,8 @@ Toda la información oficial sobre fechas, entregables y criterios de evaluació
 |---|---|
 | Buildathon (evento presencial) | 2 de mayo |
 | Envío de proyectos | Hasta el 8 de mayo, 11:59 PM |
-| Anuncio de ganadores | Por confirmar |
+| Revisión de proyectos | 11 al 16 de mayo |
+| Anuncio de ganadores | 17 de mayo |
 
 > Después del evento tienes **6 días** para desarrollar y pulir tu proyecto antes del envío final.
 
@@ -111,7 +112,7 @@ Enviar todo a través de la plataforma Stellar Build:
 | 2do lugar | $100 USD |
 | 3er lugar | $50 USD |
 
-> Stellar revisará los proyectos y publicará los resultados después de unos días del cierre de envíos.
+> Stellar revisará los proyectos del 11 al 16 de mayo y publicará los resultados el 17 de mayo.
 
 ---
 

@@ -83,6 +83,8 @@ El **Buildathon Ethereum Lima × Stellar** es un evento intensivo de un día enf
 
 - **Evento presencial:** 2 de mayo, 4:00 p.m. – 8:00 p.m.
 - **Plazo de entrega:** 8 de mayo, 11:59 PM (6 días post-evento para desarrollar)
+- **Revisión de proyectos:** 11 al 16 de mayo
+- **Anuncio de ganadores:** 17 de mayo
 - **Formato:** Individual o equipos de hasta 3 personas
 - **Premios:** $300 USD en total ($150 / $100 / $50)
 - **Presentacion del evento:** [Ver en Canva](https://canva.link/yegtdzcdycbnsmd)
